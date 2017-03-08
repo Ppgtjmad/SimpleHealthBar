@@ -1,0 +1,22 @@
+/*
+    Header
+*/
+author = "HoverGuy";
+onLoadName = "Simple Health Bar";
+onLoadMission = "v 1.0";
+overviewPicture = "overviewPicture.paa";
+
+/*
+    Classes
+*/
+#include "HG\UI\HG_ControlTypes.h"
+
+class RscTitles
+{
+    #include "HG\UI\Dialogs\HG_SHB.h"
+};
+
+class CfgFunctions 
+{
+	#include "HG\Functions\HG_Functions.h"
+};
