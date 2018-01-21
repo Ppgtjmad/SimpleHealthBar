@@ -23,9 +23,9 @@ if((player distance _curTar) < 2) then
         {
 	        private ["_rankIcon","_color"];
 			_rankIcon = [_curTar,"texture"] call BIS_fnc_rankParams;
-	        if(damage _curTar <= 0.5) then {_color = [0,0.5,0,1];};
-	        if(damage _curTar > 0.5 && damage _curTar < 0.7) then {_color = [1,1,0,1];};
-	        if(damage _curTar >= 0.7) then {_color = [1,0,0,1];};
+	        if((damage _curTar) <= 0.5) then {_color = [0,0.5,0,1];};
+	        if((damage _curTar) > 0.5 AND (damage _curTar < 0.7)) then {_color = [1,1,0,1];};
+	        if((damage _curTar) >= 0.7) then {_color = [1,0,0,1];};
 	        HG_SHB_PH progressSetPosition (1 - (damage _curTar));
 	        HG_SHB_PH ctrlSetTextColor _color;
 	        HG_SHB_PH ctrlSetPosition [(_screenPosH select 0)+0.1,(_screenPosH select 1)+0.05];

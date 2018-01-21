@@ -22,24 +22,24 @@ class HG_HealthBar
 			idc = HG_SHB_TEXT_IDC;
 		    x = 0.225;
 			y = 0.4;
-			w = 0.3;
-			h = 0.04;
+			w = 0.12375 * safezoneW;
+			h = 0.022 * safezoneH;
 		};
 		class ProgressHealth: HG_RscProgress
 		{
 			idc = HG_SHB_PH_IDC;
 		    x = 0.275;
 			y = 0.44;
-			w = 0.2;
-			h = 0.04;
+			w = 0.0825 * safezoneW;
+			h = 0.022 * safezoneH;
 		};
 		class ProgressFatigue: HG_RscProgress
 		{
 			idc = HG_SHB_PF_IDC;
 			x = 0.275;
 			y = 0.5;
-			w = 0.2;
-			h = 0.02;
+			w = 0.0825 * safezoneW;
+			h = 0.011 * safezoneH;
 		};
 	};
 };
